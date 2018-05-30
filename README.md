@@ -8,8 +8,8 @@ Create a Ruby script that publishes one of the following stats as a JSON string 
 * network stats: `{"received": 1258452, "transmitted": 148558", "unit": "MB", "interface": "eth0"}`
     * Publish every 30 minutes on a weekday
 * average load (`/proc/loadavg`): `{"average_load": 0.33}`
-    * Publish every minute between 9AM and 5PM
-    ``` * 9-17 * * * ```
+    * Publish every minute between 9AM and 5PM  
+    The needed cronjob for this is:  ``` * 9-17 * * * ```
 
 Every student is assigned a single stat in the lab.
 
